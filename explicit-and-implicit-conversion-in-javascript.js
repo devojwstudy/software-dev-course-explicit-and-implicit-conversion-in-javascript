@@ -55,3 +55,7 @@ let numSix =Number(stringSix);
 let numTwo = Number(stringTwo);
 let multiplicationResult = numSix * numTwo;
 console.log("The result is: " + multiplicationResult);
+//Explicit conversion Edge case example
+let stringHello= "Hello";
+let numHello=Number(stringHello);
+console.log("This string is not a number, the output is:"+ numHello);
