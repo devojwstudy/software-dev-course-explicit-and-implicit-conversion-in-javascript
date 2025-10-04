@@ -19,14 +19,39 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" - 2;
+//let result = "5" - 2;
+//console.log("The result is: " + result);
+//This correction converts the string to a number
+let stringFive="5";
+let num5=Number(stringFive);
+let result = num5 - 2;
 console.log("The result is: " + result);
-
-let isValid = Boolean("false");
+//let isValid = Boolean("false");
+//if (isValid) {
+//    console.log("This is valid!");
+//}
+//This correction converts the Boolean to a false value
+let isFalse = "";
+let isValid = Boolean(isFalse);
 if (isValid) {
     console.log("This is valid!");
 }
-
-let age = "25";
+//
+//let age = "25";
+//let totalAge = age + 5;
+//console.log("Total Age: " + totalAge);
+//This correction converts the string to a number
+let stringAge = "25";
+let numAge=Number(stringAge);
+let age = numAge;
 let totalAge = age + 5;
 console.log("Total Age: " + totalAge);
+//Implicit conversion example
+console.log("6"*"2");
+//Explicit conversion example
+let stringSix ="6";
+let stringTwo = "2";
+let numSix =Number(stringSix);
+let numTwo = Number(stringTwo);
+let multiplicationResult = numSix * numTwo;
+console.log("The result is: " + multiplicationResult);
